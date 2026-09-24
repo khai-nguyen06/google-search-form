@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form cơ bản</title>
+    <!-- Bước 4: Tạo style về font chữ áp dụng toàn bộ form -->
+    <style>
+        .wufoo {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bước 2 & 4: Khai báo form với class wufoo -->
+    <form method="get" action="simpleform.html" class="wufoo">
+        
+        <h2>Order Form</h2>
+        
+        <!-- Chọn sản phẩm (Select/Option) -->
+        <p>What would you like to buy?</p>
+        <select>
+            <option value="A">A</option>
+            <option value="B">B (+ 0.5$)</option>
+            <option value="C">C (+ 0.5$)</option>
+        </select>
+
+        <!-- Chọn số lượng (Radio Button) -->
+        <p>How many would you like to order?</p>
+        <input type="radio" name="rd"/> 1 - $10 <br/>
+        <input type="radio" name="rd"/> 2 - $20 <br/>
+        <input type="radio" name="rd"/> 3 - $25 <br/>
+
+        <!-- Thông tin cá nhân (Textfield) -->
+        <p>Name <span style="color: red">*</span></p>
+        <input type="text" name="firstname" placeholder="FirstName" size="15"/>
+        <input type="text" name="lastname" placeholder="LastName" size="15"/>
+
+        <p>Email</p>
+        <input type="text" name="email" size="35"/>
+
+        <p>Phone Number</p>
+        <input type="text" name="phone1" size="5"/> -
+        <input type="text" name="phone2" size="5"/> -
+        <input type="text" name="phone3" size="5"/>
+
+        <!-- Nút gửi (Button) -->
+        <p><input type="button" name="btSubmit" value="Submit"/></p>
+
+    </form>
+
+</body>
+</html>
